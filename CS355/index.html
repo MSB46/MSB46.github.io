@@ -1,8 +1,52 @@
 <!DOCTYPE html>
-<html>
-<title>CS 355 Home Page</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="styles.css" rel="stylesheet">
+    <title>CS 355 Home Page</title>
+
+</head>
+
+<style>
+    h1{
+        text-align: center;
+        font-style: italic;
+        font-family: "Neon 80s", Helvetica, sans-serif;
+        text-shadow: 2px 2px crimson;
+        color: white;
+        padding: 10px;
+        border: 2px inset salmon;
+        border-radius: 20px 4px;
+        background-color:firebrick;
+        margin-bottom: 10px;
+    }
+    #dashboard{
+        border: 3px solid black;
+        margin-top: 2px;
+        margin-top: 3px;
+        background-color: antiquewhite;
+    }
+    td:nth-child(even){
+        background-color: #f1f1f1;
+    }
+    a:hover{
+        color: crimson;
+    }
+</style>
+
 <body>
-<h1>This is my home page for CS 355</h1>
-  <a href="weather"> Weather </a>
+    <h1>This is my home page for CS 355</h1>
+    <div>
+        <table id="dashboard">
+            <tr>
+                <td><a href="weather"> Weather </a></td>
+            </tr>
+        </table>
+
+    </div>
 </body>
 </html>
+</body>
+</html>
+
+
