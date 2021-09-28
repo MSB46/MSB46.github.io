@@ -79,7 +79,7 @@ a:hover{
 }
 
 @media(max-width: 700px){
-    .dashboard{
+    .navBar{
         display: flex;
         flex-direction: row;
     }
