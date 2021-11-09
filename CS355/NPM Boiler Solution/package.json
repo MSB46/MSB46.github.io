@@ -1,5 +1,14 @@
 {
 	"name": "fcc-learn-npm-package-json",
+	"author": "Michael Saulon Boodoosingh",
+	"description": "Pain",
+	"keywords": [
+		"humiliation",
+		"agony",
+		"freecodecamp"
+	],
+	"license": "Non-existing",
+	"version": "0.0.1a",
 	"dependencies": {
 		"express": "^4.14.0"
 	},
