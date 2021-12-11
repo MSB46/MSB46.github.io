@@ -6,22 +6,47 @@
 
 }
 
+body{
+    background: linear-gradient(90deg, rgba(31, 31, 31, 0.95) 39%, rgb(44, 37, 44) 100%);
+    margin: 3px;
+}
 
-h1, .navBar{
+
+
+.viewport-header {
+    position: relative;
+    /*height: 100vh;*/
+    /*text-align: center;*/
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
+}
+
+
+.home-header, .navBar{
+
+    font-family: "Neon 80s", Helvetica, sans-serif;
     text-align: center;
     font-variant: all-small-caps;
-    font-family: "Neon 80s", Helvetica, sans-serif;
-    text-shadow: 2px 1px darkgray;
+    text-shadow: 0 0 5px darkgray;
     color: black;
     padding: 20px;
-    border: var(--main-border);
-    background-color:lavenderblush;
-    margin-bottom: 7px;
+    font-size: 1.4rem;
+
+    display: block;
+}
+
+.home-header{
+    background-color: rgba(255, 240, 245, 0.29);
 }
 .navBar{
     padding: 10px;
     border: 0;
-    background-color: firebrick;
+    background-color: rgba(28, 28, 28, 0.35);
+    font-size: 1.6rem;
+    margin-bottom: 3px;
+    justify-content: center;
+    display: flex;
 
 }
 
@@ -46,14 +71,15 @@ aside{
 
 aside p{
     display: inline-block;
-    background-color: #ffa4a4;
+    background-color: rgba(19, 19, 19, 0.53);
+    border: 1px solid white;
     padding: 15px;
     border-radius: var(--aside-br);
     font-size: 1.5rem;
     font-variant: all-small-caps;
     font-family: "Neon 80s", Helvetica, sans-serif ;
     text-decoration: none;
-    color: black;
+    color: #fff;
     animation: wiggle 2s infinite 0s;
 }
 
@@ -74,13 +100,43 @@ a{
 
 
 a:hover{
-    background-color: black;
-    color: white;
+    background-color: #a2a2a2;
+
+
 }
 
-@media(max-width: 700px){
+@media screen and (min-width: 300px){
     .navBar{
-        display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        justify-content: center;
     }
+
+    video{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1053px) {
+    .navBar{
+        flex-direction: row;
+
+    }
+
+
+    video {
+        display: block;
+        object-fit: cover;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        filter: blur(4px);
+    }
+
+    .home-header{
+        text-align: center;
+
+    }
+
 }
