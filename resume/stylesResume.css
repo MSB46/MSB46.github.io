@@ -1,0 +1,193 @@
+:root{
+    --main-color: rgb(255,221, 199);
+    --border-color: #DB7093;
+    --main-border: 5px inset var(--border-color);
+    --main-font: 'Montserrat', sans-serif;
+    --secondary-font: 'Raleway', sans-serif;
+}
+
+*{
+    color: #292929;
+}
+
+.navBar{
+    display: inherit;
+    text-align: left;
+    font-variant: all-small-caps;
+    font-family: "Neon 80s", Helvetica, sans-serif;
+    text-shadow: 1px 1px crimson;
+    padding: 10px;
+    margin-bottom: 6px;
+    border: 1px solid salmon;
+    background-color: firebrick;
+
+}
+
+.navBar a{
+    color: white;
+    font-size: 1.5em;
+    margin-right:  20px;
+    padding: 4px;
+}
+
+h1,.desc {
+    font-family: var(--main-font);
+    text-align: center;
+    padding: 10px 0 ;
+    margin: 0;
+    font-size: 30pt;
+
+}
+
+.desc{
+    font-size: 14pt;
+    padding: 0;
+}
+
+div{
+    font-family: var(--secondary-font);
+    font-size: 11pt;
+
+}
+
+section, footer, header{
+    border: 1px solid var(--border-color);
+    padding: 10px 10px 50px 40px;
+    margin: 0;
+    background-color: lavenderblush;
+    column-gap: 2px;
+}
+
+
+section section{
+    border: 0;
+    padding: 5px;
+}
+
+header{
+    border: var(--main-border);
+    padding: 55px;
+}
+
+section h2, footer h2{
+    font-variant: all-small-caps;
+    font-size: 3em;
+    margin: 20px 0;
+    font-family: var(--main-font);
+
+}
+
+/* Education */
+#edu{
+    background: url("images/pinkCity.jpg") center;
+    background-size: cover;
+    padding-bottom: 100px;
+}
+
+#edu div{
+    max-width: 40vw;
+}
+
+#edu p{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/* Work Experience */
+.jobdesc, .job-summary{
+    margin: 10px 15px;
+    padding: 5px 10px 0;
+    border-radius: 2px;
+    background-color: #fce6e6;
+
+}
+
+
+
+
+li{
+    padding: 5px 0;
+    margin: 0;
+
+}
+
+section:nth-child(odd){
+    background: #ffa4a4 ;
+}
+
+section section{
+    background: #ffa4a4 ;
+}
+
+p{
+    margin: 3px 0;
+}
+
+h3{
+    margin: 5px 0;
+    font-size: 1.25em;
+}
+
+footer{
+    padding-bottom: 0;
+}
+
+.contact{
+    text-align: center;
+}
+
+.contact ul li{
+    position: relative;
+    left: -20px;
+    list-style-type: none;
+    display: inline-block;
+    padding: 0 15px 15px;
+    font-size: 12pt;
+
+}
+
+a{
+    text-decoration: none;
+    color: orchid;
+
+}
+a:hover{
+    background-color: black;
+    color: white;
+}
+
+@media screen and (max-width: 767px) and (min-width: 300px){
+    .navBar{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 3px;
+    }
+
+    .job-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .jobdesc{
+        padding: 40px;
+        border-radius: 13px;
+
+    }
+
+}
+
+@media screen and (min-width: 1053px) {
+
+    .job-item{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        padding: 10px 5px;
+    }
+
+    .jobdesc{
+        padding: 10px;
+        border-radius: 0;
+    }
+
+}
